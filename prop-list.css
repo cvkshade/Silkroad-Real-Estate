@@ -1,0 +1,209 @@
+@import 'Boxicon.css';
+:root {
+    --baclr:  #c7c7bf38;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 22% 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.filterBar {
+    background-color: var(--baclr);
+
+}
+.main-content {
+    display: grid;
+    grid-template-rows: 2.2rem 1fr;
+    gap: 1rem;
+}
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.category .list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 78.5%;
+    background-color: #DAA520;
+    height: 100%;
+    align-items: center;
+}
+.category .list span {
+    /* display: flex;
+    align-items: center; */
+    width: fit-content;
+}
+.category .list a {
+    padding-left: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.category .list span > ion-icon {
+    font-size: 44px;
+    color: brown;
+    margin: 1rem;
+}
+.category .list span > ion-icon:hover {
+    background-color: rgba(255, 217, 0, 0.568);
+}
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    background-color: rgba(19, 16, 16, 0.664);
+    gap: 1rem;
+}
+.top-post {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.ads {
+    background-color: tomato;
+}
+.card {
+    background-color: var(--baclr);
+    height: 175px;
+    display: flex;
+    grid-template-rows: 90% 1fr;
+    color: #fff;
+    background-color: #fff;
+}
+
+.card-inner {
+    display: flex;
+    width: 100%;
+}
+.display {
+    background-color: var(--baclr);
+    color: #fff;
+    height: 100%;
+    width: 20%;
+}
+.card-img {
+    position: relative;
+}
+
+.card .card-img  > img {
+    display: block;
+    object-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+    max-height: 200px;
+    height: 200px;
+    padding: 1rem;
+    background-color: #fff;
+
+    height: 100%;
+
+}
+.card-body {
+    border-top: none;
+    background-color: #fff;
+    border-bottom: none;
+    color: #76542F;
+    border-bottom: 5px solid #DAA520;
+    width: 60%;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+/* .card .card-body > div {
+    display: grid;
+    grid-template-columns: 15px 1fr;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0 1rem;
+} */
+.card .card-body .desc {
+    text-align: center;
+    display: block;
+    padding: 0.8rem 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    color: #fff;
+    font-weight: 900;
+}
+.card-footer span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    background: #DAA520;
+    border-radius: 5px 5px 0 0;
+}
+.card-img .rent {
+    background-color: goldenrod;
+    font-size: smaller;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+}
+.filterBar {
+    padding: 0.4rem;
+    margin-left: 1rem;
+}
+.filterBar form {
+    background-color: rgba(26, 12, 12, 0.473);
+    height: 37rem;
+    padding: 0.5rem;
+    width: 100%;
+    display: grid;
+    /* justify-content: space-around; */
+    
+}
+.filterBar input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(255, 217, 0, 0.459);
+    height: 00.5rem;
+    border-radius: 10px;
+}
+.filterBar input[type="range"]::-moz-range-track {
+    background: gold;
+    height: 0.4rem;
+  }
+ .filterBar input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -5px; /* Centers thumb on the track */
+    background: darkcyan;
+    height: 2rem;
+    width: 1rem;    
+ }
+ .filterBar input[type="range"] {
+    height: 1rem;
+
+ }
+ .filterBar label {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+ }
+ .filterBar select {
+    width: 100%;
+    height: 2rem;
+ }
+ .filterBar input {
+    width: 100%;
+    height: 2rem;
+ }
+
+

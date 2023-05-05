@@ -1,0 +1,139 @@
+
+
+.main {
+    /* background-color: blueviolet; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+fieldset {
+    height: 30%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 4px;
+    border: none;
+}
+
+fieldset legend {
+
+    font-size: 3rem;
+    font-weight: 900;
+    
+    padding: 0 1rem 5px;
+    text-shadow: 0px 0px 8px black;
+    text-align: center;
+    color: #fff;
+}
+fieldset form {
+    width: 100%;
+}
+.searchBox {
+    border: 2px solid #0707056e;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0px 0px 5px #000;
+
+}
+.searchBox span {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+}
+.searchBox input {
+    width: 75%;
+    display: inline;
+    height: 100%;
+    color: #000;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+.searchBox input::placeholder {
+    color: #000;
+    padding: 0 5px;
+}
+.searchBox button {
+    height: 100%;
+    width: 20%;
+    text-shadow: 0 0 3px #000;
+    letter-spacing: 1.5px;
+    border: none;
+    background-color: #9E4C27;
+    font-weight: 900;
+    font-size: larger;
+    color: gold;
+    cursor: pointer;
+}
+.searchBox button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: transform 3ms;
+    border-radius: 0 10px 10px 0;
+}
+.switcher {
+    font-size: 1.7rem;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    /* text-shadow: 2px 2px 2px #0707056e; */
+    color: rgba(20, 2, 2, 0.658);
+    background-color: rgba(255, 255, 255, 0.452);
+
+    border-right: none;
+    border-bottom: none;
+    font-weight: 700;
+    height: 4rem;
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.home-style {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px 0% 0 0;
+    border: 6px solid #070705e0;
+    border-right: none;
+    border-bottom: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+
+}
+
+.switcher p {
+    text-align: right;
+    position: relative;
+    padding: 5px 3px;
+}
+.recent {
+    display: none;
+    position: relative;
+    transition: height 3s;
+    height: 0px;
+}
+@media (max-width: 480px){
+
+.nav {
+    display: none;
+}
+fieldset {
+    width: 95%;
+}
+}
